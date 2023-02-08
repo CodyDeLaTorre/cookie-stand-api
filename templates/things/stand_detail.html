@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="hero-content bg-gray-500 p-4 space-x-4">
+        <h2>Details about {{ stand.location }}</h2>
+        <p>Owner: {{ stand.owner }}</p>
+        <p>Description: {{ stand.description }}</p>
+        <p>Hourly Sales: {{ stand.hourly_sales }}</p>
+        <p>Minimum Customers/Hour: {{ stand.minimum_customers_per_hour }}</p>
+        <p>Maximum Customers/Hour: {{ stand.maximum_customers_per_hour }}</p>
+        <p>Average Cookies/Sale: {{ stand.average_cookies_per_sale }}</p>
+        <a href="{% url 'stand_update' stand.pk %}">+ Update</a>
+        <a href="{% url 'stand_delete' stand.pk %}">- Delete</a>
+    </div>
+{% endblock content%}
