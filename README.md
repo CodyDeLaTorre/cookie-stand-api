@@ -2,6 +2,8 @@
 
 ## Project: Cookie Stand API
 
+[deployed api on Vercel](https://cookie-stand-api-dlt.vercel.app/)
+
 ### Author: Cody De La Torre
 
 ### Links and Resources
